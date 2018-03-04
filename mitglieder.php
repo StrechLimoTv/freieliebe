@@ -18,11 +18,15 @@ include("auth.php"); //include auth.php file on all secure pages
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jqc-1.12.3/moment-2.18.1/dt-1.10.16/b-1.5.1/sl-1.2.5/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="css/generator-base.css">
+        <link rel="stylesheet" type="text/css" href="css/editor.dataTables.min.css">
+
+        <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/v/dt/jqc-1.12.3/moment-2.18.1/dt-1.10.16/b-1.5.1/sl-1.2.5/datatables.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/dataTables.editor.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/table.users.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>
@@ -54,67 +58,31 @@ include("auth.php"); //include auth.php file on all secure pages
     </nav>
 
         <!-- MITGLIEDER PAGE CONTENT -->
-   <!DOCTYPE html>
+	<body class="dataTables">
+		<div class="container">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<h1 class="title">
+				Aktuelle User
+			</h1>
+			
+			<table cellpadding="0" cellspacing="0" border="0" class="display" id="users" width="100%">
+				<thead>
+					<tr>
+						<th>Username</th>
+						<th>Steamid64</th>
+						<th>AUID</th>
+						<th>Geburtsdatum</th>
+						<th>Aktuelles Alter</th>
+						<th>E-mail</th>
+						<th>Reg_IP</th>
+						<th>Reg_Date</th>
+						<th>Passwort Hash</th>
+					</tr>
+				</thead>
+			</table>
 
-
-        
-<div class="container">
-  <h1 class="title">Aktuelle Mitglieder</h1>
-  <hr class="style1">
-  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
-  <input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <br>
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-        
-    </thead>
-    <tbody id="myTable">
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@mail.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@greatstuff.com</td>
-      </tr>
-      <tr>
-        <td>Anja</td>
-        <td>Ravendale</td>
-        <td>a_r@test.com</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
-</div>
-
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
+		</div>
+	</body>
 
 
 
