@@ -160,7 +160,7 @@ a:hover {text-decoration:underline;}
 }
 
 .bs-example a.regelntags{
-    color: #F0D52 !important;
+    color: #F0D52D !important;
     font-size: 20px;
 }
 
@@ -172,5 +172,24 @@ a:hover {text-decoration:underline;}
 }
 
 
-
+/*SHOUTBOX*/
+.shoutbox_main {
+    border:1px solid #b41336 !important;
+    width:350px;
+    padding:10px;
+}
+.message {
+    border-bottom:1px solid #AAA;
+    padding:2px;
+}
+.message span {
+    font-size:10px;
+    color:#888;
+    margin-left:10px;
+}
+.s_form {
+    margin:0px;
+    padding:10px 0;
+}
+https://www.script-tutorials.com/how-to-easily-make-shoutbox-application/
 

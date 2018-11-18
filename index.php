@@ -84,19 +84,31 @@ include("auth.php"); //include auth.php file on all secure pages
         
     <div class="container-fluid text-center">    
       <div class="row content">
-        <div class="col-sm-2 sidenav">
+          <div class="col-sm-2 sidenav">
           <p><a href="#">Link</a></p>
           <p><a href="#">Link</a></p>
           <p><a href="#">Link</a></p>
         </div>
+
         <div class="col-sm-8 text-left"> 
            <h1 class="title">Wilkommen <?php echo $_SESSION['username']; ?>!</h1>
             
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <hr class="style1">
-          <h3>Test</h3>
-          <p>Lorem ipsum...</p>
+          
+          
+        <div class="shoutbox_main">
+            <h1 class="title">Shoutbox</h1>
+            <form class="s_form" method="post" action="index.php">
+            <div><input type="text" name="s_message" /><input type="submit" value="Say" name="s_say" /></div>
+            </form>
+            <div>You can shout anything in this chat</div>
         </div>
+            https://www.script-tutorials.com/how-to-easily-make-shoutbox-application/
+            
+        </div>
+          
+          
         <div class="col-sm-2 sidenav">
           <div class="well">
             <h1>ADS</h1>
@@ -115,7 +127,7 @@ include("auth.php"); //include auth.php file on all secure pages
         <div class="footer navbar-fixed-bottom">
         <div class="container">
             <p class="text-left pull-left" ><a class="EinloggenText2" href="ts3server://79.133.51.98/?nickname=Dashboard Gast" target="_blank">Verbinde mit Teamspeak</a></p>
-            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Aeon Eros</a></p>
+            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Justin Dreisow</a></p>
         </div>
     </div>
 

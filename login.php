@@ -14,6 +14,9 @@ Website: freieliebe.one
     <link rel="icon" type="img/ico" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/vendor.c39b0dcb.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
     <body>   
@@ -37,7 +40,7 @@ Website: freieliebe.one
                 $_SESSION['welcomemsg'] = false;
                 header("Location: index.php"); // Redirect user to index.php
                 }else{
-                    echo "<div class='form'><h3>Username/Passwort ist nicht korrekt. Melde dich bei einem deiner Chefs.</h3><br/>Klick hier um dich <a href='login.php'>Einzuloggen</a></div>";
+                    echo "<div class='form'><p>Username/Passwort ist nicht korrekt. Melde dich bei einem deiner Chefs. <br/> Klick hier um dich </p> <a href='login.php'>Einzuloggen</a></div>";
                     }
         }else{
     ?>
@@ -57,8 +60,8 @@ Website: freieliebe.one
         
 <div class="footer navbar-fixed-bottom">
         <div class="container">
-            <p class="text-left pull-left" ><a class="EinloggenText2" href="http://www.zero-one.cc" target="_blank">Graphics and Logos by Zero-One Gaming Community</a></p>
-            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Aeon Eros</a></p>
+            <p class="text-left pull-left" ><a class="EinloggenText2" href="http://www.zero-one.cc" target="_blank">Background by Zero-One Online Community</a></p>
+            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Justin Dreisow</a></p>
         </div>
     </div>
         

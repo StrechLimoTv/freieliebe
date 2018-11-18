@@ -59,7 +59,7 @@ include("auth.php"); //include auth.php file on all secure pages
   <div class="container">
 
     <div id="narrow-browser-alert" class="alert alert-info text-center">
-      <strong>Heads up!</strong> <br>Narrow your browser!</div>
+      <strong>ACHTUNG!</strong> <br>NUR ZUM TEST</div>
     
     <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
       <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
@@ -190,10 +190,13 @@ include("auth.php"); //include auth.php file on all secure pages
 </div>
 
         
+        
+        
+        
     <div class="footer navbar-fixed-bottom">
         <div class="container">
             <p class="text-left pull-left" ><a class="EinloggenText2" href="ts3server://79.133.51.98/?nickname=Dashboard Gast" target="_blank">Verbinde mit Teamspeak</a></p>
-            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Aeon Eros</a></p>
+            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Justin Dreisow</a></p>
         </div>
     </div>
         

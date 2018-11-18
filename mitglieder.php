@@ -58,31 +58,9 @@ include("auth.php"); //include auth.php file on all secure pages
     </nav>
 
         <!-- MITGLIEDER PAGE CONTENT -->
-	<body class="dataTables">
-		<div class="container">
 
-			<h1 class="title">
-				Aktuelle User
-			</h1>
-			
-			<table cellpadding="0" cellspacing="0" border="0" class="display" id="users" width="100%">
-				<thead>
-					<tr>
-						<th>Username</th>
-						<th>Steamid64</th>
-						<th>AUID</th>
-						<th>Geburtsdatum</th>
-						<th>Aktuelles Alter</th>
-						<th>E-mail</th>
-						<th>Reg_IP</th>
-						<th>Reg_Date</th>
-						<th>Passwort Hash</th>
-					</tr>
-				</thead>
-			</table>
 
-		</div>
-	</body>
+
 
 
 
@@ -90,7 +68,7 @@ include("auth.php"); //include auth.php file on all secure pages
     <div class="footer navbar-fixed-bottom">
         <div class="container">
             <p class="text-left pull-left" ><a class="EinloggenText2" href="ts3server://79.133.51.98/?nickname=Dashboard Gast" target="_blank">Verbinde mit Teamspeak</a></p>
-            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Aeon Eros</a></p>
+            <p class="text-right pull-right"><a class="EinloggenText2" target="_blank">Created by Justin Dreisow</a></p>
         </div>
     </div>
         
